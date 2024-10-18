@@ -1,0 +1,226 @@
+body {
+    background-color: #e5dfc5;
+}
+
+
+#header{ 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed; /* Fixes the navigation bar to the top */
+    top: 0; /* Sticks it to the top of the page */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    list-style: none;
+    margin: 15px;
+}
+
+nav ul li a {
+    color: #864039;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 12px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #864039;
+    background-color: #d2c59e;
+    border-radius: 4px;
+}
+
+.container {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.center-image {
+    width: 120%; 
+    height: auto;
+}
+
+.text {
+    display: block;
+    background-color: #d2c59e;
+    width: 500px; /* Define the width of the circle */
+    height: 200px;
+    border-radius: 80%; /* Creates the circle shape */
+    text-align: center; /* Center-aligns text */
+}
+
+h1 {
+    margin: 0; 
+    color: #464432; 
+}
+
+.subtitle {
+    color: #864039; 
+}
+
+
+/* About page */
+.about-text{
+    color: #241d17;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about .container h2{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 100px;
+    color: #864039;
+    size: 150px;
+}
+
+.about .container p{
+    text-align: center;
+    font-size: large;
+    margin-top: 20px;
+    line-height: 1.5;
+    color: #241d17;
+}
+
+
+/*Portfolio page*/
+.portfolio-text{
+    color: #241d17;
+}
+
+.portfolio .container {
+    display: flex;
+    flex-direction: row;
+    padding: 250px 55px;
+    gap: 30px;
+}
+
+.portfolio-item h2{
+    color: #464432;
+    text-align: center;
+}
+
+.portfolio img {
+    width: 450px;
+    height: auto;
+    border-radius: 8px; 
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.portfolio img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+
+/* Contact page */
+.contact{
+    padding: 50px;
+}
+
+.contact .container {
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form on the page */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.contact h2 {
+    text-align: center;
+    color: #864039;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #864039; /* Highlights input on focus */
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical; /* Allows users to resize vertically */
+}
+
+form button {
+    background-color: #864039;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #6b302d;
+}
+
+@media (max-width: 768px) {
+    .contact .container {
+        padding: 15px;
+    }
+
+    form button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
